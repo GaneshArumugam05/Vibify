@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
+
 const trendingSongs = [
   { id: 1, title: "Blinding Lights", artist: "The Weeknd", image: "src/assets/img/song-thumb/oh-manapennae.png" },
   { id: 2, title: "Levitating", artist: "Dua Lipa", image: "src/assets/img/song-thumb/dhaam_dhoom.png" },
@@ -59,9 +60,9 @@ const Homescreen = () => {
           </div>
         </section>
 
-        {/* Popular Radio */}
+        {/* Popular Songs */}
         <section>
-          <h2 className="text-xl font-bold mb-4">Popular Radio</h2>
+          <h2 className="text-xl font-bold mb-4">Popular Songs</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {popularRadios.map(radio => (
               <div key={radio.id} className="bg-zinc-900 rounded-lg p-3 hover:bg-zinc-700 transition text-center">
